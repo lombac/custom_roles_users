@@ -1,7 +1,7 @@
-name	description	roletype	account_group_ids	restrict_dismissal_access	only_allow_ci_access	only_allow_read_access	has_defender_permissions	only_allow_compute_access
-lombac_test_role1	Made by Terraform	System Admin		FALSE	FALSE	FALSE	TRUE	FALSE
-lombac_test_role2	Made by Terraform	Account Group Admin	34bbcfd8-9093-4c5f-bec3-557456a95c9a||9ce823fa-9683-4a05-9d41-4bd34ae0d1da	FALSE	FALSE	FALSE	FALSE	FALSE
-lombac_test_role3	Made by Terraform	Account Group Read Only	9ce823fa-9683-4a05-9d41-4bd34ae0d1da	TRUE	FALSE	TRUE	FALSE	FALSE
-lombac_test_role4	Made by Terraform	Cloud Provisioning Admin	9ce823fa-9683-4a05-9d41-4bd34ae0d1da	TRUE	FALSE	FALSE	TRUE	FALSE
-lombac_test_role5	Made by Terraform	Build and Deploy Security		TRUE	FALSE	FALSE	FALSE	FALSE
-lombac_test_role6	Made by Terraform	Account and Cloud Provisioning Admin	9ce823fa-9683-4a05-9d41-4bd34ae0d1da	FALSE	FALSE	FALSE	FALSE	FALSE
+name,description,roletype,account_group_ids,restrict_dismissal_access,only_allow_ci_access,only_allow_read_access,has_defender_permissions,only_allow_compute_access
+lombac_test_role1,Made by Terraform,System Admin,,false,false,false,true,false
+lombac_test_role2,Made by Terraform,Account Group Admin,34bbcfd8-9093-4c5f-bec3-557456a95c9a||9ce823fa-9683-4a05-9d41-4bd34ae0d1da,false,false,false,false,false
+lombac_test_role3,Made by Terraform,Account Group Read Only,9ce823fa-9683-4a05-9d41-4bd34ae0d1da,true,false,true,false,false
+lombac_test_role4,Made by Terraform,Cloud Provisioning Admin,9ce823fa-9683-4a05-9d41-4bd34ae0d1da,true,false,false,true,false
+lombac_test_role5,Made by Terraform,Build and Deploy Security,,true,false,false,false,false
+lombac_test_role6,Made by Terraform,Account and Cloud Provisioning Admin,9ce823fa-9683-4a05-9d41-4bd34ae0d1da,false,false,false,false,false

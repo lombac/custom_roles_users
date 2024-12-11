@@ -1,9 +1,9 @@
-resource "prismacloud_user_role" "example" {
+/*resource "prismacloud_user_role" "example" {
   name        = "lombac user role"
   role_type = "Account Group Admin"
   description = "Made by Terraform"
 } 
-
+*/
 /*
 You can also create user roles from a CSV file using native Terraform
 HCL and looping.  Assume you have a CSV file (user_roles.csv) of user roles that looks like this (with
@@ -22,6 +22,7 @@ Here's how you would do this:
 locals {
     user_roles = csvdecode(file("user_roles.csv"))
 }
+
 // Now specify the user role resource with a loop like this:
 resource "prismacloud_user_role" "example" {
     for_each = { for inst in local.user_roles : inst.name => inst }
@@ -31,10 +32,10 @@ resource "prismacloud_user_role" "example" {
     role_type = each.value.roletype
     restrict_dismissal_access = each.value.restrict_dismissal_access
     account_group_ids = (each.value.roletype == "System Admin" || each.value.roletype == "Build and Deploy Security") ? [] : split("||", each.value.account_group_ids)
-    additional_attributes {
+    /*additional_attributes {
         only_allow_ci_access = each.value.only_allow_ci_access
         only_allow_read_access = each.value.only_allow_read_access
         has_defender_permissions = each.value.has_defender_permissions
         only_allow_compute_access = each.value.only_allow_compute_access
-    }  
+    } */ 
 }
