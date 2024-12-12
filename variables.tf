@@ -1,9 +1,10 @@
+#Please update the url with your Prisma Cloud tenant
 variable "url" {
   default = "api2.eu.prismacloud.io"
 }
 
 variable "prisma_access_key" {
-  default = "2b1542ed-6d6a-4e64-9004-a33e168901e8"
+  default = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 }
 
 variable "prisma_secret_key" {
