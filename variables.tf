@@ -8,6 +8,6 @@ variable "prisma_access_key" {
 }
 
 variable "prisma_secret_key" {
-  default = "81aKmMKEs/P/GEbuTWOvhxDUW5c="
+  default = "xxxxxxxxxxxxxxxxxxxxxx"
 }
 
